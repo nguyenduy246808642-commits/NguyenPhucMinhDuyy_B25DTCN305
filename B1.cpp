@@ -26,8 +26,8 @@ int main() {
         cout << "Tuoi: ";
         while (!(cin >> students[i].age)) {
             cout << "LOI: Tuoi phai la so nguyen! Nhap lai: ";
-            cin.clear(); // Xóa flag l?i
-            cin.ignore(10000, '\n'); // B? qua input sai
+            cin.clear(); // XÃ³a flag 
+            cin.ignore(10000, '\n'); 
         }
         
        
@@ -81,3 +81,4 @@ int main() {
     cout << "GPA: " << fixed << setprecision(2) << students[maxIndex].gpa << endl;
     
 }
+
