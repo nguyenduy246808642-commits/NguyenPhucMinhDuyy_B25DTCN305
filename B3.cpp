@@ -4,17 +4,17 @@
 #include <iomanip>
 using namespace std;
 
-// Ð?nh ngh?a c?u trúc Contact
+
 struct Contact {
     string name;
     string phone;
 };
 
 int main() {
-    // S? d?ng vector ð? lýu tr? 10 liên l?c
+    
     vector<Contact> contacts;
     
-    // Nh?p thông tin cho các liên l?c
+  
     cout << "=== NHAP THONG TIN LIEN LAC ===" << endl;
     for (int i = 0; i < 10; i++) {
         Contact c;
@@ -28,7 +28,7 @@ int main() {
         contacts.push_back(c);
     }
     
-    // In ra t?t c? các liên l?c
+    
     cout << "\n" << string(60, '=') << endl;
     cout << "DANH BA DIEN THOAI" << endl;
     cout << string(60, '=') << endl;
@@ -56,7 +56,7 @@ int main() {
     
     bool found = false;
     for (int i = 0; i < contacts.size(); i++) {
-        // T?m t? khóa trong tên (không phân bi?t hoa thý?ng)
+       
         if (contacts[i].name.find(keyword) != string::npos) {
             cout << "Ten: " << contacts[i].name << endl;
             cout << "So dien thoai: " << contacts[i].phone << endl;
@@ -71,3 +71,4 @@ int main() {
     
     return 0;
 }
+
